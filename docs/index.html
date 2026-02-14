@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="ru" class="no-js">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOLDFY</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Neue+Haas+Grotesk+Display:wght@300;400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="preloader__text">
+            <span>H</span>
+            <span>O</span>
+            <span>L</span>
+            <span>D</span>
+            <span>F</span>
+            <span>Y</span>
+        </div>
+    </div>
+
+    <!-- Cursor -->
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="navbar__container">
+            <a href="#" class="navbar__logo">
+                <img src="assets/logo.png" alt="">
+            </a>
+
+            <div class="navbar__menu">
+                <div class="navbar__left">
+                    <a href="collections.html" class="navbar__link" data-text="Коллекции">Коллекции</a>
+                    <a href="lookbook.html" class="navbar__link" data-text="Lookbook">Lookbook</a>
+                    <a href="SALE.html" class="navbar__link" data-text="SALE">SALE</a>
+                    <a href="about.html" class="navbar__link" data-text="О нас">О нас</a>
+                </div>
+
+                <div class="navbar__right">
+                    <div class="navbar__icons">
+                      <!-- Замените существующую иконку поиска на это -->
+                        <div class="navbar__search">
+                          <input type="text" placeholder="Поиск..." class="navbar__search-input">
+                          <button class="navbar__search-button"><i class="fas fa-search"></i></button>
+                        </div>
+                        <a href="cart.html" class="navbar__icon"><i class="fas fa-shopping-bag"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <button class="navbar__burger">
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Marquee -->
+    <div class="marquee">
+        <div class="marquee__content">
+            <span class="ticker-item">Новая коллекция Winter25 уже доступна</span>
+            <span class="ticker-item">Бесплатная доставка по всей России</span>
+            <span class="ticker-item">Эксклюзивные модели только у нас</span>
+            <span class="ticker-item">Скидка 20% на первую покупку</span>
+            <span class="ticker-item">SALE - ограниченная серия</span>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero__content">
+            <h1 class="hero__title">
+                <span class="hero__title-line">Премиальная одежда</span>
+                <span class="hero__title-line">из Тюмени</span>
+            </h1>
+            <p class="hero__subtitle">Создано с вниманием к деталям</p>
+            <a href="#" class="hero__button">
+                <span>Исследовать</span>
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </a>
+        </div>
+
+        <div class="hero__image">
+            <div class="hero__image-inner" style="background-image: url('assets/hero.jpg')"></div>
+        </div>
+    </section>
+
+    <!-- Collection Section -->
+    <section class="collection">
+        <div class="section__header">
+            <h2 class="section__title">Новая коллекция</h2>
+            <a href="#" class="section__link">Смотреть все</a>
+        </div>
+
+        <div class="collection__grid">
+            <div class="collection__item">
+                <div class="collection__item-image">
+                    <img src="assets/collection-1.jpg" alt="Коллекция 1">
+                    <div class="collection__item-overlay">
+                        <button class="collection__item-button">Просмотр</button>
+                    </div>
+                </div>
+                <div class="collection__item-info">
+                    <h3 class="collection__item-title">Пальто "Тюмень"</h3>
+                    <p class="collection__item-price">32 000 ₽</p>
+                </div>
+            </div>
+
+            <div class="collection__item">
+                <div class="collection__item-image">
+                    <img src="assets/collection-2.jpg" alt="Коллекция 2">
+                    <div class="collection__item-overlay">
+                        <button class="collection__item-button">Просмотр</button>
+                    </div>
+                </div>
+                <div class="collection__item-info">
+                    <h3 class="collection__item-title">Платье "Север"</h3>
+                    <p class="collection__item-price">24 500 ₽</p>
+                </div>
+            </div>
+
+            <div class="collection__item">
+                <div class="collection__item-image">
+                    <img src="assets/collection-3.jpg" alt="Коллекция 3">
+                    <div class="collection__item-overlay">
+                        <button class="collection__item-button">Просмотр</button>
+                    </div>
+                </div>
+                <div class="collection__item-info">
+                    <h3 class="collection__item-title">Пуховик V-силуэта</h3>
+                    <p class="collection__item-price">38 000 ₽</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lookbook Section -->
+  <section class="lookbook">
+      <div class="lookbook__container">
+          <div class="lookbook__content">
+              <h2 class="lookbook__title">Winter 25</h2>
+              <p class="lookbook__text">Исследуйте новые образы этого сезона, созданные нашими стилистами специально для вас.</p>
+              <a href="lookbook.html" class="lookbook__button">Открыть Lookbook</a>
+          </div>
+          <div class="lookbook__trends">
+              <div class="trend-card">
+                  <h3 class="trend-card__title">Многослойность</h3>
+                  <p class="trend-card__desc">Сочетание фактур: кашемир, шерсть и экокожа в едином образе</p>
+              </div>
+              <div class="trend-card">
+                  <h3 class="trend-card__title">Силуэты</h3>
+                  <p class="trend-card__desc">Объемные плечи и зауженный низ - ключевой акцент коллекции</p>
+              </div>
+              <div class="trend-card">
+                  <h3 class="trend-card__title">Палитра</h3>
+                  <p class="trend-card__desc">Приглушенные тона: графит, пыльная роза и хаки</p>
+              </div>
+          </div>
+      </div>
+  </section>
+
+    <!-- About Section -->
+    <section class="about">
+        <div class="about__container">
+            <div class="about__image">
+                <img src="assets/about.jpg" alt="О бренде">
+            </div>
+            <div class="about__content">
+                <h2 class="about__title">О бренде</h2>
+                <div class="about__text">
+                    <p>HoldFY — это премиальный бренд одежды, созданный в Тюмени в 2024 году. Мы сочетаем традиционные техники пошива с современным дизайном.</p>
+                    <p>Каждая вещь создается с вниманием к деталям из лучших материалов, отобранных вручную.</p>
+                </div>
+                <div class="about__stats">
+                    <div class="about__stat">
+                        <span class="about__stat-number">100%</span>
+                        <span class="about__stat-label">натуральные материалы</span>
+                    </div>
+                    <div class="about__stat">
+                        <span class="about__stat-number">83</span>
+                        <span class="about__stat-label">города доставки</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="newsletter">
+        <div class="newsletter__container">
+            <h2 class="newsletter__title">Подпишитесь на рассылку</h2>
+            <p class="newsletter__text">Получайте эксклюзивные предложения и первыми узнавайте о новых коллекциях.</p>
+            <form class="newsletter__form">
+                <input type="email" placeholder="Ваш email" class="newsletter__input">
+                <button type="submit" class="newsletter__button">Подписаться</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer__container">
+            <div class="footer__top">
+                <div class="footer__logo">
+                    <img src="assets/logo_white.png" alt="">
+                </div>
+
+                <div class="footer__links">
+                    <div class="footer__column">
+                        <h3 class="footer__title">Магазин</h3>
+                        <a href="collections.html" class="footer__link">Коллекции</a>
+                        <a href="lookbook.html" class="footer__link">Lookbook</a>
+                        <a href="SALE.html" class="footer__link">SALE</a>
+                    </div>
+
+                    <div class="footer__column">
+                        <h3 class="footer__title">Информация</h3>
+                        <a href="about.html" class="footer__link">О нас</a>
+                        <a href="https://groupprice.ru/blog/article/pravila-ukhoda-za-odezhdoy" class="footer__link">Уход за одеждой</a>
+                        <a href="about.html #gg" class="footer__link">Контакты</a>
+                    </div>
+
+                    <div class="footer__column">
+                        <h3 class="footer__title">Контакты</h3>
+                        <a href="#" class="footer__link">info@holdfy.ru</a>
+                        <a href="#" class="footer__link">+7 (3452) 123-456</a>
+                        <div class="footer__social">
+                            <a href="#" class="footer__social-link"><i class="fab fa-instagram"></i></a>
+                            <a href="#" class="footer__social-link"><i class="fab fa-telegram"></i></a>
+                            <a href="#" class="footer__social-link"><i class="fab fa-vk"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer__bottom">
+                <p class="footer__copyright">© 2025 HOLDFY. Все права защищены.</p>
+                <div class="footer__legal">
+                    <a href="#" class="footer__legal-link">Политика конфиденциальности</a>
+                    <a href="#" class="footer__legal-link">Условия использования</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="admin-panel">
+    <div class="admin-panel__content">
+        <h2>Админ-панель HOLDFY</h2>
+
+        <div class="admin-tabs">
+            <button class="admin-tab active" data-tab="products">Товары</button>
+            <button class="admin-tab" data-tab="collections">Коллекции</button>
+        </div>
+
+        <div class="admin-tab-content active" id="products-tab">
+            <h3>Добавить новый товар</h3>
+            <form id="add-product-form" class="admin-form">
+                <div class="form-group">
+                    <label>Название</label>
+                    <input type="text" name="title" required>
+                </div>
+                <div class="form-group">
+                    <label>Описание</label>
+                    <textarea name="description" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label>Цена (₽)</label>
+                    <input type="number" name="price" required>
+                </div>
+                <div class="form-group">
+                    <label>Категория</label>
+                    <select name="category" required>
+                        <option value="collection">Коллекция</option>
+                        <option value="lookbook">Lookbook</option>
+                        <option value="sale">SALE</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>Основное фото</label>
+                    <input type="file" name="main-image" accept="image/*" required>
+                </div>
+                <div class="form-group">
+                    <label>Дополнительные фото (до 5)</label>
+                    <input type="file" name="additional-images" accept="image/*" multiple>
+                </div>
+                <button type="submit" class="admin-button">Добавить товар</button>
+            </form>
+
+            <h3>Все товары</h3>
+            <div class="products-list" id="products-list">
+                <!-- Товары будут загружаться здесь -->
+            </div>
+        </div>
+    </div>
+</div>
+
+    <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+</body>
+</html>

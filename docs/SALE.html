@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="ru" class="no-js">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SALE | HOLDFY</title>
+
+    <!-- Те же шрифты и стили, что и на других страницах -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Neue+Haas+Grotesk+Display:wght@300;400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="preloader__text">
+            <span>H</span>
+            <span>O</span>
+            <span>L</span>
+            <span>D</span>
+            <span>F</span>
+            <span>Y</span>
+        </div>
+    </div>
+
+    <!-- Cursor -->
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="navbar__container">
+            <a href="index.html" class="navbar__logo">
+                <img src="assets/logo.png" alt="HOLDFY">
+            </a>
+
+            <div class="navbar__menu">
+                <div class="navbar__left">
+                    <a href="collections.html" class="navbar__link" data-text="Коллекции">Коллекции</a>
+                    <a href="lookbook.html" class="navbar__link" data-text="Lookbook">Lookbook</a>
+                    <a href="sale.html" class="navbar__link active" data-text="SALE">SALE</a>
+                    <a href="about.html" class="navbar__link" data-text="О нас">О нас</a>
+                </div>
+
+                <div class="navbar__right">
+                    <div class="navbar__icons">
+                        <div class="navbar__search">
+                            <input type="text" placeholder="Поиск..." class="navbar__search-input">
+                            <button class="navbar__search-button"><i class="fas fa-search"></i></button>
+                        </div>
+                        <a href="cart.html" class="navbar__icon"><i class="fas fa-shopping-bag"></i></a>
+                        <span class="cart-count">0</span>
+                    </div>
+                </div>
+            </div>
+
+            <button class="navbar__burger">
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Marquee -->
+    <div class="marquee">
+        <div class="marquee__content">
+            <span>Новая коллекция Winter25 уже доступна</span>
+            <span>Бесплатная доставка по всей России</span>
+            <span>Эксклюзивные модели только у нас</span>
+            <span>Скидка 20% на первую покупку</span>
+            <span>SALE - ограниченная серия</span>
+        </div>
+    </div>
+
+    <!-- Hero Section для страницы SALE -->
+    <section class="sale-hero">
+        <div class="sale-hero__content">
+            <h1 class="sale-hero__title">
+                <span class="sale-hero__title-line">SALE</span>
+            </h1>
+            <p class="sale-hero__subtitle">Лучшие предложения этого сезона</p>
+        </div>
+    </section>
+
+    <!-- Sale Products -->
+    <section class="sale-products">
+        <div class="container">
+            <!-- Фильтры товаров -->
+            <div class="sale-filters">
+                <div class="sale-filters__group">
+                    <button class="sale-filters__button active" data-category="all">Все товары</button>
+                    <button class="sale-filters__button" data-category="clothing">Одежда</button>
+                    <button class="sale-filters__button" data-category="accessories">Аксессуары</button>
+                </div>
+                <div class="sale-filters__group">
+                    <button class="sale-filters__button" data-sort="price-asc">По возрастанию цены</button>
+                    <button class="sale-filters__button" data-sort="price-desc">По убыванию цены</button>
+                </div>
+            </div>
+
+            <!-- Сетка товаров -->
+            <div class="sale-grid" id="products-grid">
+                <!-- Товары будут загружаться здесь -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="newsletter">
+        <div class="newsletter__container">
+            <h2 class="newsletter__title">Подпишитесь на рассылку</h2>
+            <p class="newsletter__text">Получайте эксклюзивные предложения и первыми узнавайте о новых коллекциях.</p>
+            <form class="newsletter__form">
+                <input type="email" placeholder="Ваш email" class="newsletter__input">
+                <button type="submit" class="newsletter__button">Подписаться</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer__container">
+            <div class="footer__top">
+                <div class="footer__logo">
+                    <img src="assets/logo_white.png" alt="HOLDFY">
+                </div>
+
+                <div class="footer__links">
+                    <div class="footer__column">
+                        <h3 class="footer__title">Магазин</h3>
+                        <a href="collections.html" class="footer__link">Коллекции</a>
+                        <a href="lookbook.html" class="footer__link">Lookbook</a>
+                        <a href="sale.html" class="footer__link">SALE</a>
+                    </div>
+
+                    <div class="footer__column">
+                        <h3 class="footer__title">Информация</h3>
+                        <a href="about.html" class="footer__link">О нас</a>
+                        <a href="https://groupprice.ru/blog/article/pravila-ukhoda-za-odezhdoy" class="footer__link">Уход за одеждой</a>
+                        <a href="about.html#gg" class="footer__link">Контакты</a>
+                    </div>
+
+                    <div class="footer__column">
+                        <h3 class="footer__title">Контакты</h3>
+                        <a href="mailto:info@holdfy.ru" class="footer__link">info@holdfy.ru</a>
+                        <a href="tel:+73452123456" class="footer__link">+7 (3452) 123-456</a>
+                        <div class="footer__social">
+                            <a href="#" class="footer__social-link"><i class="fab fa-instagram"></i></a>
+                            <a href="#" class="footer__social-link"><i class="fab fa-telegram"></i></a>
+                            <a href="#" class="footer__social-link"><i class="fab fa-vk"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer__bottom">
+                <p class="footer__copyright">© 2025 HOLDFY. Все права защищены.</p>
+                <div class="footer__legal">
+                    <a href="privacy.html" class="footer__legal-link">Политика конфиденциальности</a>
+                    <a href="terms.html" class="footer__legal-link">Условия использования</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Те же скрипты, что и на главной -->
+    <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+
+    <!-- Скрипт для страницы SALE -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Загрузка товаров
+            const productsGrid = document.getElementById('products-grid');
+            const cartCount = document.querySelector('.cart-count');
+
+            // Пример данных товаров (в реальном проекте можно загружать с сервера)
+            const products = [
+                {
+                    id: 1,
+                    name: 'Пальто "Тюмень"',
+                    price: 32000,
+                    salePrice: 22400,
+                    category: 'clothing',
+                    image: 'assets/collection-1.jpg',
+                    sizes: ['XS', 'S', 'M', 'L'],
+                    colors: ['Черный', 'Бежевый']
+                },
+                {
+                    id: 2,
+                    name: 'Платье "Север"',
+                    price: 24500,
+                    salePrice: 17150,
+                    category: 'clothing',
+                    image: 'assets/collection-2.jpg',
+                    sizes: ['S', 'M', 'L'],
+                    colors: ['Серый', 'Белый']
+                },
+                {
+                    id: 3,
+                    name: 'Пуховик V-силуэта',
+                    price: 38000,
+                    salePrice: 26600,
+                    category: 'clothing',
+                    image: 'assets/collection-3.jpg',
+                    sizes: ['M', 'L', 'XL'],
+                    colors: ['Черный', 'Коричневый']
+                },
+                {
+                    id: 4,
+                    name: 'Шарф из кашемира',
+                    price: 8500,
+                    salePrice: 5950,
+                    category: 'accessories',
+                    image: 'assets/accessory-1.jpg',
+                    colors: ['Серый', 'Бордовый']
+                },
+                {
+                    id: 5,
+                    name: 'Кожаный ремень',
+                    price: 6500,
+                    salePrice: 4550,
+                    category: 'accessories',
+                    image: 'assets/accessory-2.jpg',
+                    colors: ['Черный', 'Коричневый']
+                },
+                {
+                    id: 6,
+                    name: 'Сумка "Минимал"',
+                    price: 12500,
+                    salePrice: 8750,
+                    category: 'accessories',
+                    image: 'assets/accessory-3.jpg',
+                    colors: ['Черный', 'Бежевый']
+                }
+            ];
+
+            // Загрузка корзины из localStorage
+            let cart = JSON.parse(localStorage.getItem('cart')) || [];
+            updateCartCount();
+
+            // Отображение товаров
+            function renderProducts(productsToRender) {
+                productsGrid.innerHTML = '';
+
+                productsToRender.forEach(product => {
+                    const isInCart = cart.some(item => item.id === product.id);
+
+                    const productCard = document.createElement('div');
+                    productCard.className = 'product-card';
+                    productCard.dataset.category = product.category;
+                    productCard.dataset.price = product.salePrice;
+
+                    productCard.innerHTML = `
+                        <div class="product-card__image">
+                            <img src="${product.image}" alt="${product.name}">
+                            <div class="product-card__badge">SALE</div>
+                            <div class="product-card__overlay">
+                                <button class="product-card__quickview">Быстрый просмотр</button>
+                            </div>
+                        </div>
+                        <div class="product-card__info">
+                            <h3 class="product-card__name">${product.name}</h3>
+                            <div class="product-card__prices">
+                                <span class="product-card__old-price">${product.price.toLocaleString()} ₽</span>
+                                <span class="product-card__price">${product.salePrice.toLocaleString()} ₽</span>
+                            </div>
+                            <button class="product-card__add-to-cart ${isInCart ? 'in-cart' : ''}" data-id="${product.id}">
+                                ${isInCart ? 'В корзине' : 'Добавить в корзину'}
+                            </button>
+                        </div>
+                    `;
+
+                    productsGrid.appendChild(productCard);
+                });
+
+                // Инициализация обработчиков событий
+                initEventHandlers();
+            }
+
+            // Инициализация обработчиков событий
+            function initEventHandlers() {
+                // Добавление в корзину
+                document.querySelectorAll('.product-card__add-to-cart').forEach(button => {
+                    button.addEventListener('click', function() {
+                        const productId = parseInt(this.dataset.id);
+                        const product = products.find(p => p.id === productId);
+
+                        if (this.classList.contains('in-cart')) {
+                            // Удаление из корзины
+                            cart = cart.filter(item => item.id !== productId);
+                            this.textContent = 'Добавить в корзину';
+                            this.classList.remove('in-cart');
+                        } else {
+                            // Добавление в корзину
+                            cart.push({
+                                id: product.id,
+                                name: product.name,
+                                price: product.salePrice,
+                                image: product.image,
+                                quantity: 1
+                            });
+                            this.textContent = 'В корзине';
+                            this.classList.add('in-cart');
+                        }
+
+                        // Сохранение корзины и обновление счетчика
+                        saveCart();
+                        updateCartCount();
+                    });
+                });
+
+                // Быстрый просмотр
+                document.querySelectorAll('.product-card__quickview').forEach(button => {
+                    button.addEventListener('click', function(e) {
+                        e.stopPropagation();
+                        // Здесь можно добавить модальное окно с деталями товара
+                        alert('Функция быстрого просмотра будет реализована позже');
+                    });
+                });
+            }
+
+            // Фильтрация товаров
+            const filterButtons = document.querySelectorAll('.sale-filters__button[data-category]');
+            const sortButtons = document.querySelectorAll('.sale-filters__button[data-sort]');
+
+            filterButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    // Удаляем активный класс у всех кнопок фильтра
+                    filterButtons.forEach(btn => btn.classList.remove('active'));
+                    // Добавляем активный класс текущей кнопке
+                    this.classList.add('active');
+
+                    const category = this.dataset.category;
+                    let filteredProducts = products;
+
+                    if (category !== 'all') {
+                        filteredProducts = products.filter(product => product.category === category);
+                    }
+
+                    renderProducts(filteredProducts);
+                });
+            });
+
+            // Сортировка товаров
+            sortButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    // Удаляем активный класс у всех кнопок сортировки
+                    sortButtons.forEach(btn => btn.classList.remove('active'));
+                    // Добавляем активный класс текущей кнопке
+                    this.classList.add('active');
+
+                    const sortType = this.dataset.sort;
+                    let sortedProducts = [...products];
+
+                    if (sortType === 'price-asc') {
+                        sortedProducts.sort((a, b) => a.salePrice - b.salePrice);
+                    } else if (sortType === 'price-desc') {
+                        sortedProducts.sort((a, b) => b.salePrice - a.salePrice);
+                    }
+
+                    renderProducts(sortedProducts);
+                });
+            });
+
+            // Сохранение корзины в localStorage
+            function saveCart() {
+                localStorage.setItem('cart', JSON.stringify(cart));
+            }
+
+            // Обновление счетчика корзины
+            function updateCartCount() {
+                const totalItems = cart.reduce((total, item) => total + item.quantity, 0);
+                cartCount.textContent = totalItems;
+                cartCount.style.display = totalItems > 0 ? 'block' : 'none';
+            }
+
+            // Инициализация страницы
+            renderProducts(products);
+
+            // Анимация карточек при скролле
+            const animateCardsOnScroll = () => {
+                const cards = document.querySelectorAll('.product-card');
+
+                cards.forEach((card, index) => {
+                    const cardPosition = card.getBoundingClientRect().top;
+                    const windowHeight = window.innerHeight;
+
+                    if (cardPosition < windowHeight - 100) {
+                        card.style.opacity = '1';
+                        card.style.transform = 'translateY(0)';
+                    }
+                });
+            };
+
+            // Инициализация анимации карточек
+            const productCards = document.querySelectorAll('.product-card');
+            productCards.forEach((card, index) => {
+                card.style.opacity = '0';
+                card.style.transform = 'translateY(30px)';
+                card.style.transition = `all 0.6s ease ${index * 0.1}s`;
+            });
+
+            window.addEventListener('scroll', animateCardsOnScroll);
+            animateCardsOnScroll(); // Инициализация при загрузке
+        });
+    </script>
+</body>
+</html>

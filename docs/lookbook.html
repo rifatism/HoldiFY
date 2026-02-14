@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="ru" class="no-js">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lookbook | HOLDFY</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Neue+Haas+Grotesk+Display:wght@300;400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="preloader__text">
+            <span>H</span>
+            <span>O</span>
+            <span>L</span>
+            <span>D</span>
+            <span>F</span>
+            <span>Y</span>
+        </div>
+    </div>
+
+    <!-- Cursor -->
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="navbar__container">
+            <a href="index.html" class="navbar__logo">
+                <img src="assets/logo.png" alt="HOLDFY">
+            </a>
+
+            <div class="navbar__menu">
+                <div class="navbar__left">
+                    <a href="collections.html" class="navbar__link" data-text="Коллекции">Коллекции</a>
+                    <a href="lookbook.html" class="navbar__link active" data-text="Lookbook">Lookbook</a>
+                    <a href="sale.html" class="navbar__link" data-text="SALE">SALE</a>
+                    <a href="about.html" class="navbar__link" data-text="О нас">О нас</a>
+                </div>
+
+                <div class="navbar__right">
+                    <div class="navbar__icons">
+                        <div class="navbar__search">
+                            <input type="text" placeholder="Поиск..." class="navbar__search-input">
+                            <button class="navbar__search-button"><i class="fas fa-search"></i></button>
+                        </div>
+                        <a href="cart.html" class="navbar__icon"><i class="fas fa-shopping-bag"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <button class="navbar__burger">
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Marquee -->
+    <div class="marquee">
+        <div class="marquee__content">
+            <span>Новая коллекция Winter25 уже доступна</span>
+            <span>Бесплатная доставка по всей России</span>
+            <span>Эксклюзивные модели только у нас</span>
+            <span>Скидка 20% на первую покупку</span>
+            <span>SALE - ограниченная серия</span>
+        </div>
+    </div>
+
+
+    <section class="lookbook-grid">
+        <div class="container-42">
+            <!-- Фильтры -->
+            <div class="lookbook-filters">
+                <button class="lookbook-filters__button active" data-season="all">Все сезоны</button>
+                <button class="lookbook-filters__button" data-season="winter25">Winter 25</button>
+                <button class="lookbook-filters__button" data-season="autumn24">Autumn 24</button>
+                <button class="lookbook-filters__button" data-season="summer24">Summer 24</button>
+            </div>
+
+            <!-- Мозаика фотографий -->
+            <div class="lookbook-mosaic">
+                <!-- Первый ряд - 1 большая и 2 маленькие -->
+                <div class="lookbook-row">
+                    <div class="lookbook-item large" data-season="winter25">
+                        <img src="assets/lookbook/look-1.jpg" alt="Образ 1">
+                        <div class="lookbook-item__info">
+                            <h3>Winter 25</h3>
+                            <p>Объемные силуэты и натуральные ткани</p>
+                        </div>
+                    </div>
+                    <div class="lookbook-item small" data-season="winter25">
+                        <img src="assets/lookbook/look-2.jpg" alt="Образ 2">
+                        <div class="lookbook-item__info">
+                            <h3>Winter 25</h3>
+                            <p>Детали образа</p>
+                        </div>
+                    </div>
+                    <div class="lookbook-item small" data-season="winter25">
+                        <img src="assets/lookbook/look-3.jpg" alt="Образ 3">
+                        <div class="lookbook-item__info">
+                            <h3>Winter 25</h3>
+                            <p>Аксессуары</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Второй ряд - 2 средние -->
+                <div class="lookbook-row">
+                    <div class="lookbook-item medium" data-season="autumn24">
+                        <img src="assets/lookbook/look-4.jpg" alt="Образ 4">
+                        <div class="lookbook-item__info">
+                            <h3>Autumn 24</h3>
+                            <p>Многослойность в городском стиле</p>
+                        </div>
+                    </div>
+                    <div class="lookbook-item medium" data-season="autumn24">
+                        <img src="assets/lookbook/look-5.jpg" alt="Образ 5">
+                        <div class="lookbook-item__info">
+                            <h3>Autumn 24</h3>
+                            <p>Вечерний образ</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Третий ряд - 3 маленькие и 1 большая -->
+                <div class="lookbook-row">
+                    <div class="lookbook-item small" data-season="summer24">
+                        <img src="assets/lookbook/look-6.jpg" alt="Образ 6">
+                        <div class="lookbook-item__info">
+                            <h3>Summer 24</h3>
+                            <p>Дневной образ</p>
+                        </div>
+                    </div>
+                    <div class="lookbook-item small" data-season="summer24">
+                        <img src="assets/lookbook/look-7.jpg" alt="Образ 7">
+                        <div class="lookbook-item__info">
+                            <h3>Summer 24</h3>
+                            <p>Пляжный стиль</p>
+                        </div>
+                    </div>
+                    <div class="lookbook-item small" data-season="summer24">
+                        <img src="assets/lookbook/look-8.jpg" alt="Образ 8">
+                        <div class="lookbook-item__info">
+                            <h3>Summer 24</h3>
+                            <p>Аксессуары</p>
+                        </div>
+                    </div>
+                    <div class="lookbook-item large" data-season="summer24">
+                        <img src="assets/lookbook/look-9.jpg" alt="Образ 9">
+                        <div class="lookbook-item__info">
+                            <h3>Summer 24</h3>
+                            <p>Полный летний образ</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Четвертый ряд - 1 большая и 1 средняя -->
+                <div class="lookbook-row">
+                    <div class="lookbook-item large" data-season="winter25">
+                        <img src="assets/lookbook/look-10.jpg" alt="Образ 10">
+                        <div class="lookbook-item__info">
+                            <h3>Winter 25</h3>
+                            <p>Городской зимний стиль</p>
+                        </div>
+                    </div>
+                    <div class="lookbook-item medium" data-season="winter25">
+                        <img src="assets/lookbook/look-11.jpg" alt="Образ 11">
+                        <div class="lookbook-item__info">
+                            <h3>Winter 25</h3>
+                            <p>Детали пальто</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Collections Preview -->
+    <section class="collections-preview">
+        <div class="collections-preview__content">
+            <h2 class="collections-preview__title">Полные коллекции</h2>
+            <p class="collections-preview__subtitle">Исследуйте все модели из наших сезонных капсул</p>
+            <a href="collections.html" class="collections-preview__button">Смотреть коллекции</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer__container">
+            <div class="footer__top">
+                <div class="footer__logo">
+                    <img src="assets/logo_white.png" alt="HOLDFY">
+                </div>
+
+                <div class="footer__links">
+                    <div class="footer__column">
+                        <h3 class="footer__title">Магазин</h3>
+                        <a href="collections.html" class="footer__link">Коллекции</a>
+                        <a href="lookbook.html" class="footer__link">Lookbook</a>
+                        <a href="sale.html" class="footer__link">SALE</a>
+                    </div>
+
+                    <div class="footer__column">
+                        <h3 class="footer__title">Информация</h3>
+                        <a href="about.html" class="footer__link">О нас</a>
+                        <a href="https://groupprice.ru/blog/article/pravila-ukhoda-za-odezhdoy" class="footer__link">Уход за одеждой</a>
+                        <a href="about.html #gg" class="footer__link">Контакты</a>
+                    </div>
+
+                    <div class="footer__column">
+                        <h3 class="footer__title">Контакты</h3>
+                        <a href="mailto:info@holdfy.ru" class="footer__link">info@holdfy.ru</a>
+                        <a href="tel:+73452123456" class="footer__link">+7 (3452) 123-456</a>
+                        <div class="footer__social">
+                            <a href="#" class="footer__social-link"><i class="fab fa-instagram"></i></a>
+                            <a href="#" class="footer__social-link"><i class="fab fa-telegram"></i></a>
+                            <a href="#" class="footer__social-link"><i class="fab fa-vk"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer__bottom">
+                <p class="footer__copyright">© 2025 HOLDFY. Все права защищены.</p>
+                <div class="footer__legal">
+                    <a href="privacy.html" class="footer__legal-link">Политика конфиденциальности</a>
+                    <a href="terms.html" class="footer__legal-link">Условия использования</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+
+    <!-- Скрипт для страницы Lookbook -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Фильтрация по сезонам
+            const filterButtons = document.querySelectorAll('.lookbook-filters__button');
+            const lookbookItems = document.querySelectorAll('.lookbook-item');
+
+            filterButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    // Удаляем активный класс у всех кнопок
+                    filterButtons.forEach(btn => btn.classList.remove('active'));
+                    // Добавляем активный класс текущей кнопке
+                    this.classList.add('active');
+
+                    const season = this.getAttribute('data-season');
+
+                    lookbookItems.forEach(item => {
+                        if (season === 'all' || item.getAttribute('data-season') === season) {
+                            item.style.display = 'block';
+                        } else {
+                            item.style.display = 'none';
+                        }
+                    });
+                });
+            });
+
+            // Анимация при скролле
+            const animateOnScroll = () => {
+                const items = document.querySelectorAll('.lookbook-item');
+
+                items.forEach(item => {
+                    const itemPosition = item.getBoundingClientRect().top;
+                    const windowHeight = window.innerHeight;
+
+                    if (itemPosition < windowHeight - 100) {
+                        item.style.opacity = '1';
+                        item.style.transform = 'translateY(0)';
+                    }
+                });
+            };
+
+            // Инициализация анимации
+            const lookbookItemsAll = document.querySelectorAll('.lookbook-item');
+            lookbookItemsAll.forEach(item => {
+                item.style.opacity = '0';
+                item.style.transform = 'translateY(30px)';
+                item.style.transition = 'all 0.6s ease';
+            });
+
+            window.addEventListener('scroll', animateOnScroll);
+            animateOnScroll(); // Инициализация при загрузке
+
+            // Плавное появление элементов с задержкой
+            const rows = document.querySelectorAll('.lookbook-row');
+            rows.forEach((row, index) => {
+                const items = row.querySelectorAll('.lookbook-item');
+                items.forEach((item, i) => {
+                    item.style.transitionDelay = `${(index * 0.1) + (i * 0.05)}s`;
+                });
+            });
+        });
+    </script>
+</body>
+</html>

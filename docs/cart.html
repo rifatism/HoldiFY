@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="ru" class="no-js">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Корзина | HOLDFY</title>
+    <!-- Те же шрифты и стили, что и на других страницах -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Neue+Haas+Grotesk+Display:wght@300;400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="preloader__text">
+            <span>H</span>
+            <span>O</span>
+            <span>L</span>
+            <span>D</span>
+            <span>F</span>
+            <span>Y</span>
+        </div>
+    </div>
+
+    <!-- Cursor -->
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="navbar__container">
+            <a href="index.html" class="navbar__logo">
+                <img src="assets/logo.png" alt="HOLDFY">
+            </a>
+
+            <div class="navbar__menu">
+                <div class="navbar__left">
+                    <a href="collections.html" class="navbar__link" data-text="Коллекции">Коллекции</a>
+                    <a href="lookbook.html" class="navbar__link" data-text="Lookbook">Lookbook</a>
+                    <a href="sale.html" class="navbar__link" data-text="SALE">SALE</a>
+                    <a href="about.html" class="navbar__link" data-text="О нас">О нас</a>
+                </div>
+
+                <div class="navbar__right">
+                    <div class="navbar__icons">
+                        <div class="navbar__search">
+                            <input type="text" placeholder="Поиск..." class="navbar__search-input">
+                            <button class="navbar__search-button"><i class="fas fa-search"></i></button>
+                        </div>
+                        <a href="cart.html" class="navbar__icon"><i class="fas fa-shopping-bag"></i></a>
+                        <span class="cart-count">0</span>
+                    </div>
+                </div>
+            </div>
+
+            <button class="navbar__burger">
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Marquee -->
+    <div class="marquee">
+        <div class="marquee__content">
+            <span>Новая коллекция Winter25 уже доступна</span>
+            <span>Бесплатная доставка по всей России</span>
+            <span>Эксклюзивные модели только у нас</span>
+            <span>Скидка 20% на первую покупку</span>
+            <span>SALE - ограниченная серия</span>
+        </div>
+    </div>
+
+    <!-- Cart Section -->
+    <section class="cart-section">
+        <div class="container">
+            <h1 class="cart-title">Ваша корзина</h1>
+
+            <div class="cart-container">
+                <div class="cart-items" id="cart-items">
+                    <!-- Товары будут загружаться здесь -->
+                    <div class="empty-cart">
+                        <p>Ваша корзина пуста</p>
+                        <a href="sale.html" class="empty-cart-button">Перейти к покупкам</a>
+                    </div>
+                </div>
+
+                <div class="cart-summary">
+                    <h3 class="summary-title">Итог</h3>
+                    <div class="summary-row">
+                        <span>Подытог</span>
+                        <span id="subtotal">0 ₽</span>
+                    </div>
+                    <div class="summary-row">
+                        <span>Доставка</span>
+                        <span>Бесплатно</span>
+                    </div>
+                    <div class="summary-row total">
+                        <span>Итого</span>
+                        <span id="total">0 ₽</span>
+                    </div>
+                    <button class="checkout-button" id="checkout-button" disabled>Оформить заказ</button>
+                    <a href="collections.html" class="continue-shopping">Продолжить покупки</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="newsletter">
+        <div class="newsletter__container">
+            <h2 class="newsletter__title">Подпишитесь на рассылку</h2>
+            <p class="newsletter__text">Получайте эксклюзивные предложения и первыми узнавайте о новых коллекциях.</p>
+            <form class="newsletter__form">
+                <input type="email" placeholder="Ваш email" class="newsletter__input">
+                <button type="submit" class="newsletter__button">Подписаться</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer__container">
+            <div class="footer__top">
+                <div class="footer__logo">
+                    <img src="assets/logo_white.png" alt="HOLDFY">
+                </div>
+
+                <div class="footer__links">
+                    <div class="footer__column">
+                        <h3 class="footer__title">Магазин</h3>
+                        <a href="collections.html" class="footer__link">Коллекции</a>
+                        <a href="lookbook.html" class="footer__link">Lookbook</a>
+                        <a href="sale.html" class="footer__link">SALE</a>
+                    </div>
+
+                    <div class="footer__column">
+                        <h3 class="footer__title">Информация</h3>
+                        <a href="about.html" class="footer__link">О нас</a>
+                        <a href="https://groupprice.ru/blog/article/pravila-ukhoda-za-odezhdoy" class="footer__link">Уход за одеждой</a>
+                        <a href="about.html#gg" class="footer__link">Контакты</a>
+                    </div>
+
+                    <div class="footer__column">
+                        <h3 class="footer__title">Контакты</h3>
+                        <a href="mailto:info@holdfy.ru" class="footer__link">info@holdfy.ru</a>
+                        <a href="tel:+73452123456" class="footer__link">+7 (3452) 123-456</a>
+                        <div class="footer__social">
+                            <a href="#" class="footer__social-link"><i class="fab fa-instagram"></i></a>
+                            <a href="#" class="footer__social-link"><i class="fab fa-telegram"></i></a>
+                            <a href="#" class="footer__social-link"><i class="fab fa-vk"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer__bottom">
+                <p class="footer__copyright">© 2025 HOLDFY. Все права защищены.</p>
+                <div class="footer__legal">
+                    <a href="privacy.html" class="footer__legal-link">Политика конфиденциальности</a>
+                    <a href="terms.html" class="footer__legal-link">Условия использования</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Те же скрипты, что и на главной -->
+    <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+
+    <!-- Скрипт для страницы корзины -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const cartItemsContainer = document.getElementById('cart-items');
+            const subtotalElement = document.getElementById('subtotal');
+            const totalElement = document.getElementById('total');
+            const checkoutButton = document.getElementById('checkout-button');
+            const cartCount = document.querySelector('.cart-count');
+
+            // Загрузка корзины из localStorage
+            let cart = JSON.parse(localStorage.getItem('cart')) || [];
+            updateCartCount();
+
+            // Отображение товаров в корзине
+            function renderCartItems() {
+                cartItemsContainer.innerHTML = '';
+
+                if (cart.length === 0) {
+                    cartItemsContainer.innerHTML = `
+                        <div class="empty-cart">
+                            <p>Ваша корзина пуста</p>
+                            <a href="sale.html" class="empty-cart-button">Перейти к покупкам</a>
+                        </div>
+                    `;
+                    subtotalElement.textContent = '0 ₽';
+                    totalElement.textContent = '0 ₽';
+                    checkoutButton.disabled = true;
+                    return;
+                }
+
+                let subtotal = 0;
+
+                cart.forEach(item => {
+                    const itemTotal = item.price * item.quantity;
+                    subtotal += itemTotal;
+
+                    const cartItem = document.createElement('div');
+                    cartItem.className = 'cart-item';
+                    cartItem.innerHTML = `
+                        <div class="cart-item__image">
+                            <img src="${item.image}" alt="${item.name}">
+                        </div>
+                        <div class="cart-item__info">
+                            <h3 class="cart-item__name">${item.name}</h3>
+                            <div class="cart-item__price">${item.price.toLocaleString()} ₽</div>
+                            <div class="cart-item__quantity">
+                                <button class="quantity-button minus" data-id="${item.id}">-</button>
+                                <span class="quantity-value">${item.quantity}</span>
+                                <button class="quantity-button plus" data-id="${item.id}">+</button>
+                            </div>
+                            <div class="cart-item__total">${itemTotal.toLocaleString()} ₽</div>
+                        </div>
+                        <button class="cart-item__remove" data-id="${item.id}">
+                            <i class="fas fa-times"></i>
+                        </button>
+                    `;
+
+                    cartItemsContainer.appendChild(cartItem);
+                });
+
+                // Обновление итоговых сумм
+                subtotalElement.textContent = `${subtotal.toLocaleString()} ₽`;
+                totalElement.textContent = `${subtotal.toLocaleString()} ₽`;
+                checkoutButton.disabled = false;
+
+                // Инициализация обработчиков событий
+                initEventHandlers();
+            }
+
+            // Инициализация обработчиков событий
+            function initEventHandlers() {
+                // Увеличение количества
+                document.querySelectorAll('.quantity-button.plus').forEach(button => {
+                    button.addEventListener('click', function() {
+                        const productId = parseInt(this.dataset.id);
+                        const item = cart.find(item => item.id === productId);
+
+                        if (item) {
+                            item.quantity += 1;
+                            saveCart();
+                            renderCartItems();
+                            updateCartCount();
+                        }
+                    });
+                });
+
+                // Уменьшение количества
+                document.querySelectorAll('.quantity-button.minus').forEach(button => {
+                    button.addEventListener('click', function() {
+                        const productId = parseInt(this.dataset.id);
+                        const itemIndex = cart.findIndex(item => item.id === productId);
+
+                        if (itemIndex !== -1) {
+                            if (cart[itemIndex].quantity > 1) {
+                                cart[itemIndex].quantity -= 1;
+                            } else {
+                                cart.splice(itemIndex, 1);
+                            }
+
+                            saveCart();
+                            renderCartItems();
+                            updateCartCount();
+                        }
+                    });
+                });
+
+                // Удаление товара
+                document.querySelectorAll('.cart-item__remove').forEach(button => {
+                    button.addEventListener('click', function() {
+                        const productId = parseInt(this.dataset.id);
+                        cart = cart.filter(item => item.id !== productId);
+
+                        saveCart();
+                        renderCartItems();
+                        updateCartCount();
+                    });
+                });
+
+                // Оформление заказа
+                checkoutButton.addEventListener('click', function() {
+                    alert('Заказ успешно оформлен! Спасибо за покупку!');
+                    cart = [];
+                    saveCart();
+                    renderCartItems();
+                    updateCartCount();
+                });
+            }
+
+            // Сохранение корзины в localStorage
+            function saveCart() {
+                localStorage.setItem('cart', JSON.stringify(cart));
+            }
+
+            // Обновление счетчика корзины
+            function updateCartCount() {
+                const totalItems = cart.reduce((total, item) => total + item.quantity, 0);
+                cartCount.textContent = totalItems;
+                cartCount.style.display = totalItems > 0 ? 'block' : 'none';
+            }
+
+            // Инициализация страницы
+            renderCartItems();
+        });
+    </script>
+</body>
+</html>

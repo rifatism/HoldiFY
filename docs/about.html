@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="ru" class="no-js">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>О нас | HOLDFY</title>
+
+    <!-- Те же шрифты и стили, что и на главной -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Neue+Haas+Grotesk+Display:wght@300;400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="preloader__text">
+            <span>H</span>
+            <span>O</span>
+            <span>L</span>
+            <span>D</span>
+            <span>F</span>
+            <span>Y</span>
+        </div>
+    </div>
+
+    <!-- Cursor -->
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="navbar__container">
+            <a href="index.html" class="navbar__logo">
+                <img src="assets/logo.png" alt="HOLDFY">
+            </a>
+
+            <div class="navbar__menu">
+                <div class="navbar__left">
+                    <a href="collections.html" class="navbar__link" data-text="Коллекции">Коллекции</a>
+                    <a href="lookbook.html" class="navbar__link" data-text="Lookbook">Lookbook</a>
+                    <a href="sale.html" class="navbar__link" data-text="SALE">SALE</a>
+                    <a href="about.html" class="navbar__link" data-text="О нас">О нас</a>
+                </div>
+
+                <div class="navbar__right">
+                    <div class="navbar__icons">
+                        <div class="navbar__search">
+                            <input type="text" placeholder="Поиск..." class="navbar__search-input">
+                            <button class="navbar__search-button"><i class="fas fa-search"></i></button>
+                        </div>
+                        <a href="cart.html" class="navbar__icon"><i class="fas fa-shopping-bag"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <button class="navbar__burger">
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Marquee -->
+    <div class="marquee">
+        <div class="marquee__content">
+            <span>Новая коллекция Winter25 уже доступна</span>
+            <span>Бесплатная доставка по всей России</span>
+            <span>Эксклюзивные модели только у нас</span>
+            <span>Скидка 20% на первую покупку</span>
+            <span>SALE - ограниченная серия</span>
+        </div>
+    </div>
+
+    <!-- Hero Section для страницы "О нас" -->
+    <section class="about-hero">
+        <div class="about-hero__content">
+            <h1 class="about-hero__title">
+                <span class="about-hero__title-line">О бренде</span>
+            </h1>
+            <p class="about-hero__subtitle">История, философия и ценности HOLDFY</p>
+        </div>
+    </section>
+
+    <!-- История бренда -->
+    <section class="about-story">
+        <div class="container">
+            <div class="about-story__container">
+                <div class="about-story__image">
+                    <img src="assets/about-story.jpg" alt="Основатель HOLDFY">
+                </div>
+                <div class="about-story__content">
+                    <h2 class="about-story__title">Наша история</h2>
+                    <div class="about-story__text">
+                        <p>HOLDFY родился в 2024 году в Тюмени как ответ на потребность в качественной, этичной и стильной одежде для современных людей.</p>
+                        <p>Основатель бренда, начал с небольшой мастерской, где создавала первые модели пальто вручную. Сегодня HOLDFY - это команда профессионалов, объединенных любовью к дизайну и вниманием к деталям.</p>
+                    </div>
+                    <div class="about-story__quote">
+                        <p>"Мы верим, что одежда должна быть не только красивой, но и осознанной. Каждая вещь HOLDFY создается с заботой о людях и природе."</p>
+                        <span>— Здесь могло быть ваше имя(реклама), основатель</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Философия -->
+    <section class="about-philosophy">
+        <div class="container">
+            <div class="about-philosophy__header">
+                <h2 class="about-philosophy__title">Наша философия</h2>
+                <p class="about-philosophy__subtitle">Три принципа, которые лежат в основе всего, что мы делаем</p>
+            </div>
+
+            <div class="about-philosophy__grid">
+                <div class="philosophy-card">
+                    <div class="philosophy-card__icon">
+                        <i class="fas fa-leaf"></i>
+                    </div>
+                    <h3 class="philosophy-card__title">Устойчивость</h3>
+                    <p class="philosophy-card__text">Мы используем только экологичные материалы и ответственные методы производства, чтобы минимизировать воздействие на окружающую среду.</p>
+                </div>
+
+                <div class="philosophy-card">
+                    <div class="philosophy-card__icon">
+                        <i class="fas fa-award"></i>
+                    </div>
+                    <h3 class="philosophy-card__title">Качество</h3>
+                    <p class="philosophy-card__text">Каждая вещь создается с вниманием к деталям и рассчитана на долгие годы носки. Мы используем только лучшие ткани и фурнитуру.</p>
+                </div>
+
+                <div class="philosophy-card">
+                    <div class="philosophy-card__icon">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <h3 class="philosophy-card__title">Забота</h3>
+                    <p class="philosophy-card__text">Мы заботимся о комфорте наших клиентов и создаем одежду, которая подчеркивает индивидуальность и дарит уверенность.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Производство -->
+    <section class="about-production">
+        <div class="container">
+            <div class="about-production__header">
+                <h2 class="about-production__title">Производство</h2>
+                <p class="about-production__subtitle">Как создаются наши вещи</p>
+            </div>
+
+            <div class="about-production__steps">
+                <div class="production-step">
+                    <div class="production-step__number">01</div>
+                    <h3 class="production-step__title">Дизайн</h3>
+                    <p class="production-step__text">Каждая коллекция начинается с эскизов и концепций, вдохновленных природой Сибири и современным урбанистическим стилем.</p>
+                </div>
+
+                <div class="production-step">
+                    <div class="production-step__number">02</div>
+                    <h3 class="production-step__title">Подбор материалов</h3>
+                    <p class="production-step__text">Мы тщательно отбираем ткани у проверенных поставщиков, уделяя внимание качеству, экологичности и тактильным ощущениям.</p>
+                </div>
+
+                <div class="production-step">
+                    <div class="production-step__number">03</div>
+                    <h3 class="production-step__title">Пошив</h3>
+                    <p class="production-step__text">Все изделия шьются в нашей мастерской в Тюмени небольшими партиями с контролем качества на каждом этапе.</p>
+                </div>
+
+                <div class="production-step">
+                    <div class="production-step__number">04</div>
+                    <h3 class="production-step__title">Доставка</h3>
+                    <p class="production-step__text">Мы используем экологичную упаковку и предлагаем бесплатную доставку по всей России.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Команда -->
+    <section class="about-team">
+        <div class="container">
+            <div class="about-team__header">
+                <h2 class="about-team__title">Наша команда</h2>
+                <p class="about-team__subtitle">Талантливые люди, которые создают HOLDFY</p>
+            </div>
+
+            <div class="about-team__grid">
+                <div class="team-member">
+                    <div class="team-member__image">
+                        <img src="assets/team-1.jpg" alt="Анна Смирнова">
+                    </div>
+                    <div class="team-member__info">
+                        <h3 class="team-member__name">Анна Смирнова</h3>
+                        <p class="team-member__position">Основатель, креативный директор</p>
+                    </div>
+                </div>
+
+                <div class="team-member">
+                    <div class="team-member__image">
+                        <img src="assets/team-2.jpg" alt="Михаил Петров">
+                    </div>
+                    <div class="team-member__info">
+                        <h3 class="team-member__name">Михаил Петров</h3>
+                        <p class="team-member__position">Главный дизайнер</p>
+                    </div>
+                </div>
+
+                <div class="team-member">
+                    <div class="team-member__image">
+                        <img src="assets/team-3.jpg" alt="Елена Козлова">
+                    </div>
+                    <div class="team-member__info">
+                        <h3 class="team-member__name">Кирилл Баранов</h3>
+                        <p class="team-member__position">Директор по производству</p>
+                    </div>
+                </div>
+
+                <div class="team-member">
+                    <div class="team-member__image">
+                        <img src="assets/team-4.jpg" alt="Дарья Иванова">
+                    </div>
+                    <div class="team-member__info">
+                        <h3 class="team-member__name">Дарья Иванова</h3>
+                        <p class="team-member__position">Менеджер по клиентскому сервису</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Контакты -->
+    <section class="about-contacts" id="gg">
+        <div class="container">
+            <div class="about-contacts__container">
+                <div class="about-contacts__info">
+                    <h2 class="about-contacts__title">Контакты</h2>
+                    <p class="about-contacts__text">Мы всегда рады новым знакомствам и сотрудничеству</p>
+
+                    <div class="about-contacts__details">
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <p>г. Тюмень, ул. Ленина, 25</p>
+                        </div>
+
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <p>+7 (3452) 123-456</p>
+                        </div>
+
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <p>info@holdfy.ru</p>
+                        </div>
+
+                        <div class="contact-item">
+                            <i class="fas fa-clock"></i>
+                            <p>Пн-Пт: 10:00 - 19:00<br>Сб-Вс: 11:00 - 17:00</p>
+                        </div>
+                    </div>
+
+                    <div class="about-contacts__social">
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-telegram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-vk"></i></a>
+                    </div>
+                </div>
+
+                <div class="about-contacts__map">
+                    <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A1234567890abcdef&amp;source=constructor" frameborder="0"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="newsletter">
+        <div class="newsletter__container">
+            <h2 class="newsletter__title">Подпишитесь на рассылку</h2>
+            <p class="newsletter__text">Получайте эксклюзивные предложения и первыми узнавайте о новых коллекциях.</p>
+            <form class="newsletter__form">
+                <input type="email" placeholder="Ваш email" class="newsletter__input">
+                <button type="submit" class="newsletter__button">Подписаться</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer__container">
+            <div class="footer__top">
+                <div class="footer__logo">
+                    <img src="assets/logo_white.png" alt="HOLDFY">
+                </div>
+
+                <div class="footer__links">
+                    <div class="footer__column">
+                        <h3 class="footer__title">Магазин</h3>
+                        <a href="collections.html" class="footer__link">Коллекции</a>
+                        <a href="lookbook.html" class="footer__link">Lookbook</a>
+                        <a href="sale.html" class="footer__link">SALE</a>
+                    </div>
+
+                    <div class="footer__column">
+                        <h3 class="footer__title">Информация</h3>
+                        <a href="about.html" class="footer__link">О нас</a>
+                        <a href="https://groupprice.ru/blog/article/pravila-ukhoda-za-odezhdoy" class="footer__link">Уход за одеждой</a>
+                        <a href="about.html #gg" class="footer__link">Контакты</a>
+                    </div>
+
+                    <div class="footer__column">
+                        <h3 class="footer__title">Контакты</h3>
+                        <a href="mailto:info@holdfy.ru" class="footer__link">info@holdfy.ru</a>
+                        <a href="tel:+73452123456" class="footer__link">+7 (3452) 123-456</a>
+                        <div class="footer__social">
+                            <a href="#" class="footer__social-link"><i class="fab fa-instagram"></i></a>
+                            <a href="#" class="footer__social-link"><i class="fab fa-telegram"></i></a>
+                            <a href="#" class="footer__social-link"><i class="fab fa-vk"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer__bottom">
+                <p class="footer__copyright">© 2025 HOLDFY. Все права защищены.</p>
+                <div class="footer__legal">
+                    <a href="privacy.html" class="footer__legal-link">Политика конфиденциальности</a>
+                    <a href="terms.html" class="footer__legal-link">Условия использования</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Те же скрипты, что и на главной -->
+    <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+
+    <!-- Дополнительный скрипт для страницы "О нас" -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Анимация элементов при скролле
+            const animateOnScroll = () => {
+                const elements = document.querySelectorAll('.about-story__container, .philosophy-card, .production-step, .team-member');
+
+                elements.forEach(el => {
+                    const elementPosition = el.getBoundingClientRect().top;
+                    const windowHeight = window.innerHeight;
+
+                    if (elementPosition < windowHeight - 100) {
+                        el.style.opacity = '1';
+                        el.style.transform = 'translateY(0)';
+                    }
+                });
+            };
+
+            // Инициализация анимации
+            const storyContainer = document.querySelector('.about-story__container');
+            const philosophyCards = document.querySelectorAll('.philosophy-card');
+            const productionSteps = document.querySelectorAll('.production-step');
+            const teamMembers = document.querySelectorAll('.team-member');
+
+            if (storyContainer) {
+                storyContainer.style.opacity = '0';
+                storyContainer.style.transform = 'translateY(30px)';
+                storyContainer.style.transition = 'all 0.6s ease 0.2s';
+            }
+
+            philosophyCards.forEach((card, index) => {
+                card.style.opacity = '0';
+                card.style.transform = 'translateY(30px)';
+                card.style.transition = `all 0.6s ease ${0.3 + (index * 0.1)}s`;
+            });
+
+            productionSteps.forEach((step, index) => {
+                step.style.opacity = '0';
+                step.style.transform = 'translateY(30px)';
+                step.style.transition = `all 0.6s ease ${0.3 + (index * 0.1)}s`;
+            });
+
+            teamMembers.forEach((member, index) => {
+                member.style.opacity = '0';
+                member.style.transform = 'translateY(30px)';
+                member.style.transition = `all 0.6s ease ${0.3 + (index * 0.1)}s`;
+            });
+
+            window.addEventListener('scroll', animateOnScroll);
+            animateOnScroll(); // Инициализация при загрузке
+        });
+    </script>
+</body>
+</html>

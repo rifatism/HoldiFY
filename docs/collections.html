@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="ru" class="no-js">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Коллекции | HOLDFY</title>
+
+    <!-- Те же шрифты и стили, что и на главной -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Neue+Haas+Grotesk+Display:wght@300;400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Preloader (такой же как на главной) -->
+    <div class="preloader">
+        <div class="preloader__text">
+            <span>H</span>
+            <span>O</span>
+            <span>L</span>
+            <span>D</span>
+            <span>F</span>
+            <span>Y</span>
+        </div>
+    </div>
+
+    <!-- Cursor (такой же как на главной) -->
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+
+    <!-- Navigation (такой же как на главной) -->
+    <nav class="navbar">
+        <div class="navbar__container">
+            <a href="index.html" class="navbar__logo">
+                <img src="assets/logo.png" alt="HOLDFY">
+            </a>
+
+            <div class="navbar__menu">
+                <div class="navbar__left">
+                    <a href="collections.html" class="navbar__link active" data-text="Коллекции">Коллекции</a>
+                    <a href="lookbook.html" class="navbar__link" data-text="Lookbook">Lookbook</a>
+                    <a href="sale.html" class="navbar__link" data-text="SALE">SALE</a>
+                    <a href="about.html" class="navbar__link" data-text="О нас">О нас</a>
+                </div>
+
+                <div class="navbar__right">
+                    <div class="navbar__icons">
+                        <div class="navbar__search">
+                            <input type="text" placeholder="Поиск..." class="navbar__search-input">
+                            <button class="navbar__search-button"><i class="fas fa-search"></i></button>
+                        </div>
+                        <a href="cart.html" class="navbar__icon"><i class="fas fa-shopping-bag"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <button class="navbar__burger">
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Marquee (такой же как на главной) -->
+    <div class="marquee">
+        <div class="marquee__content">
+            <span>Новая коллекция Winter25 уже доступна</span>
+            <span>Бесплатная доставка по всей России</span>
+            <span>Эксклюзивные модели только у нас</span>
+            <span>Скидка 20% на первую покупку</span>
+            <span>SELE - ограниченная серия</span>
+        </div>
+    </div>
+
+    <!-- Hero Section для страницы коллекций -->
+    <section class="collections-hero">
+        <div class="collections-hero__content">
+            <h1 class="collections-hero__title">
+                <span class="collections-hero__title-line">Коллекции</span>
+            </h1>
+            <p class="collections-hero__subtitle">Исследуйте наши сезонные капсулы</p>
+        </div>
+    </section>
+
+    <!-- Коллекции -->
+    <section class="collections-grid">
+        <div class="container">
+            <!-- Фильтры коллекций -->
+            <div class="collections-filters">
+                <div class="collections-filters__group">
+                    <button class="collections-filters__button active" data-filter="all">Все коллекции</button>
+                    <button class="collections-filters__button" data-filter="current">Текущие</button>
+                    <button class="collections-filters__button" data-filter="archive">Архив</button>
+                </div>
+                <div class="collections-filters__group">
+                    <button class="collections-filters__button" data-sort="newest">Сначала новые</button>
+                    <button class="collections-filters__button" data-sort="oldest">Сначала старые</button>
+                </div>
+            </div>
+
+            <!-- Сетка коллекций -->
+            <div class="collections-grid__wrapper">
+                <!-- Коллекция 1 -->
+                <a href="collection-winter25.html" class="collection-card" data-filter="current" data-year="2025">
+                    <div class="collection-card__image">
+                        <img src="assets/collection-2.jpg" alt="Winter 25">
+                        <div class="collection-card__overlay">
+                            <span class="collection-card__view">Смотреть коллекцию</span>
+                        </div>
+                    </div>
+                    <div class="collection-card__info">
+                        <h3 class="collection-card__title">Winter 25</h3>
+                        <p class="collection-card__season">Зима 2025</p>
+                        <p class="collection-card__desc">Капсула для холодных дней с акцентом на объемные силуэты и натуральные ткани</p>
+                    </div>
+                </a>
+
+                <!-- Коллекция 2 -->
+                <a href="collection-autumn24.html" class="collection-card" data-filter="current" data-year="2024">
+                    <div class="collection-card__image">
+                        <img src="assets/autumn24.jpg" alt="Autumn 24">
+                        <div class="collection-card__overlay">
+                            <span class="collection-card__view">Смотреть коллекцию</span>
+                        </div>
+                    </div>
+                    <div class="collection-card__info">
+                        <h3 class="collection-card__title">Autumn 24</h3>
+                        <p class="collection-card__season">Осень 2024</p>
+                        <p class="collection-card__desc">Теплые оттенки и многослойность в городском стиле</p>
+                    </div>
+                </a>
+
+                <!-- Коллекция 3 -->
+                <a href="collection-summer24.html" class="collection-card" data-filter="current" data-year="2024">
+                    <div class="collection-card__image">
+                        <img src="assets/summer24.jpg" alt="Summer 24">
+                        <div class="collection-card__overlay">
+                            <span class="collection-card__view">Смотреть коллекцию</span>
+                        </div>
+                    </div>
+                    <div class="collection-card__info">
+                        <h3 class="collection-card__title">Summer 24</h3>
+                        <p class="collection-card__season">Лето 2024</p>
+                        <p class="collection-card__desc">Легкие ткани и свободные силуэты для жарких дней</p>
+                    </div>
+                </a>
+
+                <!-- Коллекция 4 -->
+                <a href="collection-spring24.html" class="collection-card" data-filter="archive" data-year="2024">
+                    <div class="collection-card__image">
+                        <img src="assets/spring24.jpg" alt="Spring 24">
+                        <div class="collection-card__overlay">
+                            <span class="collection-card__view">Смотреть коллекцию</span>
+                        </div>
+                    </div>
+                    <div class="collection-card__info">
+                        <h3 class="collection-card__title">Spring 24</h3>
+                        <p class="collection-card__season">Весна 2024</p>
+                        <p class="collection-card__desc">Пробуждение природы в пастельных тонах</p>
+                    </div>
+                </a>
+
+                <!-- Коллекция 5 -->
+                <a href="collection-winter24.html" class="collection-card" data-filter="archive" data-year="2024">
+                    <div class="collection-card__image">
+                        <img src="assets/winter24.jpg" alt="Winter 24">
+                        <div class="collection-card__overlay">
+                            <span class="collection-card__view">Смотреть коллекцию</span>
+                        </div>
+                    </div>
+                    <div class="collection-card__info">
+                        <h3 class="collection-card__title">Winter 24</h3>
+                        <p class="collection-card__season">Зима 2024</p>
+                        <p class="collection-card__desc">Первая коллекция бренда - дань уважения сибирской зиме</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lookbook Preview -->
+    <section class="lookbook-preview">
+        <div class="lookbook-preview__content">
+            <h2 class="lookbook-preview__title">Образы из коллекций</h2>
+            <p class="lookbook-preview__subtitle">Исследуйте полные lookbook'и для вдохновения</p>
+            <a href="lookbook.html" class="lookbook-preview__button">Смотреть Lookbook</a>
+        </div>
+        <div class="lookbook-preview__slider">
+          <img class="lookbook-preview__slide" src="assets/1.jpg" alt="">
+            <!-- <div class="lookbook-preview__slide" style="background-image: url('assets/1.jpg')"></div>
+            <div class="lookbook-preview__slide" style="background-image: url('assets/2.jpg')"></div>
+            <div class="lookbook-preview__slide" style="background-image: url('assets/3.jpg')"></div> -->
+        </div>
+    </section>
+
+    <!-- Newsletter (такой же как на главной) -->
+    <section class="newsletter">
+        <div class="newsletter__container">
+            <h2 class="newsletter__title">Подпишитесь на рассылку</h2>
+            <p class="newsletter__text">Получайте эксклюзивные предложения и первыми узнавайте о новых коллекциях.</p>
+            <form class="newsletter__form">
+                <input type="email" placeholder="Ваш email" class="newsletter__input">
+                <button type="submit" class="newsletter__button">Подписаться</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer (такой же как на главной) -->
+    <footer class="footer">
+        <div class="footer__container">
+            <div class="footer__top">
+                <div class="footer__logo">
+                    <img src="assets/logo_white.png" alt="HOLDFY">
+                </div>
+
+                <div class="footer__links">
+                    <div class="footer__column">
+                        <h3 class="footer__title">Магазин</h3>
+                        <a href="collections.html" class="footer__link">Коллекции</a>
+                        <a href="lookbook.html" class="footer__link">Lookbook</a>
+                        <a href="sale.html" class="footer__link">SALE</a>
+                    </div>
+
+                    <div class="footer__column">
+                        <h3 class="footer__title">Информация</h3>
+                        <a href="about.html" class="footer__link">О нас</a>
+                        <a href="https://groupprice.ru/blog/article/pravila-ukhoda-za-odezhdoy" class="footer__link">Уход за одеждой</a>
+                        <a href="about.html #gg" class="footer__link">Контакты</a>
+                    </div>
+
+                    <div class="footer__column">
+                        <h3 class="footer__title">Контакты</h3>
+                        <a href="mailto:info@holdfy.ru" class="footer__link">info@holdfy.ru</a>
+                        <a href="tel:+73452123456" class="footer__link">+7 (3452) 123-456</a>
+                        <div class="footer__social">
+                            <a href="#" class="footer__social-link"><i class="fab fa-instagram"></i></a>
+                            <a href="#" class="footer__social-link"><i class="fab fa-telegram"></i></a>
+                            <a href="#" class="footer__social-link"><i class="fab fa-vk"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer__bottom">
+                <p class="footer__copyright">© 2025 HOLDFY. Все права защищены.</p>
+                <div class="footer__legal">
+                    <a href="privacy.html" class="footer__legal-link">Политика конфиденциальности</a>
+                    <a href="terms.html" class="footer__legal-link">Условия использования</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Те же скрипты, что и на главной -->
+    <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+
+    <!-- Дополнительный скрипт для страницы коллекций -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Фильтрация коллекций
+            const filterButtons = document.querySelectorAll('.collections-filters__button[data-filter]');
+            const sortButtons = document.querySelectorAll('.collections-filters__button[data-sort]');
+            const collectionCards = document.querySelectorAll('.collection-card');
+
+            // Фильтрация
+            filterButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    // Удаляем активный класс у всех кнопок фильтра
+                    filterButtons.forEach(btn => btn.classList.remove('active'));
+                    // Добавляем активный класс текущей кнопке
+                    this.classList.add('active');
+
+                    const filterValue = this.getAttribute('data-filter');
+
+                    collectionCards.forEach(card => {
+                        if (filterValue === 'all') {
+                            card.style.display = 'block';
+                        } else {
+                            const cardFilter = card.getAttribute('data-filter');
+                            if (cardFilter === filterValue) {
+                                card.style.display = 'block';
+                            } else {
+                                card.style.display = 'none';
+                            }
+                        }
+                    });
+                });
+            });
+
+            // Сортировка
+            sortButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    // Удаляем активный класс у всех кнопок сортировки
+                    sortButtons.forEach(btn => btn.classList.remove('active'));
+                    // Добавляем активный класс текущей кнопке
+                    this.classList.add('active');
+
+                    const sortValue = this.getAttribute('data-sort');
+                    const wrapper = document.querySelector('.collections-grid__wrapper');
+                    const cards = Array.from(document.querySelectorAll('.collection-card'));
+
+                    // Сортируем карточки
+                    cards.sort((a, b) => {
+                        const yearA = parseInt(a.getAttribute('data-year'));
+                        const yearB = parseInt(b.getAttribute('data-year'));
+
+                        if (sortValue === 'newest') {
+                            return yearB - yearA;
+                        } else {
+                            return yearA - yearB;
+                        }
+                    });
+
+                    // Очищаем wrapper и добавляем отсортированные карточки
+                    wrapper.innerHTML = '';
+                    cards.forEach(card => wrapper.appendChild(card));
+                });
+            });
+
+            // Анимация карточек при скролле
+            const animateCardsOnScroll = () => {
+                const cards = document.querySelectorAll('.collection-card');
+
+                cards.forEach((card, index) => {
+                    const cardPosition = card.getBoundingClientRect().top;
+                    const windowHeight = window.innerHeight;
+
+                    if (cardPosition < windowHeight - 100) {
+                        card.style.opacity = '1';
+                        card.style.transform = 'translateY(0)';
+                    }
+                });
+            };
+
+            // Инициализация анимации карточек
+            const collectionCardsAll = document.querySelectorAll('.collection-card');
+            collectionCardsAll.forEach((card, index) => {
+                card.style.opacity = '0';
+                card.style.transform = 'translateY(30px)';
+                card.style.transition = `all 0.6s ease ${index * 0.1}s`;
+            });
+
+            window.addEventListener('scroll', animateCardsOnScroll);
+            animateCardsOnScroll(); // Инициализация при загрузке
+
+            // Слайдер lookbook preview
+            const slider = document.querySelector('.lookbook-preview__slider');
+            const slides = document.querySelectorAll('.lookbook-preview__slide');
+            let currentSlide = 0;
+
+            function showSlide(index) {
+                slides.forEach((slide, i) => {
+                    slide.style.opacity = i === index ? '1' : '0';
+                });
+            }
+
+            function nextSlide() {
+                currentSlide = (currentSlide + 1) % slides.length;
+                showSlide(currentSlide);
+            }
+
+            // Автопрокрутка слайдера
+            setInterval(nextSlide, 5000);
+            showSlide(0); // Показать первый слайд
+        });
+    </script>
+</body>
+</html>
